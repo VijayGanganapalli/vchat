@@ -47,7 +47,8 @@ class HomeScreen extends StatelessWidget {
             ),
             title: Text(title),
             subtitle: Text(
-                'This is another message and is very very long so you can see and read.'),
+              'This is another message and is very very long so you can see and read.',
+            ),
           );
         },
       ),
