@@ -20,11 +20,26 @@ class VchatApp extends StatelessWidget {
 class HomeScreen extends StatelessWidget {
   final String title;
   final messages = const [
-    'My first message',
-    'My second message',
-    'You won lottery',
-    'You should read this',
-    'You won lottery again'
+    {
+      'subject': 'My first message',
+      'body': 'This is another message and is very very long so you can see and read the message. This is another message and is very very long so you can see this message.'
+    },
+    {
+      'subject': 'My second message',
+      'body': 'This is another message and is very very long so you can see and read the message.'
+    },
+    {
+      'subject': 'You won lottery',
+      'body': 'This is another message and is very very long so you can see and read the message.'
+    },
+    {
+      'subject': 'You should read this',
+      'body': 'This is another message and is very very long so you can see and read the message.'
+    },
+    {
+      'subject': 'You won lottery again',
+      'body': 'This is another message and is very very long so you can see and read the message.'
+    },
   ];
 
   HomeScreen({Key key, this.title}) : super(key: key);
@@ -39,16 +54,14 @@ class HomeScreen extends StatelessWidget {
         itemCount: messages.length,
         separatorBuilder: (BuildContext context, int index) => Divider(),
         itemBuilder: (BuildContext context, int index) {
-          var title = messages[index];
+          var message = messages[index];
           return ListTile(
             isThreeLine: true,
             leading: CircleAvatar(
               child: Text('VK'),
             ),
-            title: Text(title),
-            subtitle: Text(
-              'This is another message and is very very long so you can see and read.',
-            ),
+            title: Text(message['subject']),
+            subtitle: Text(message['body']),
           );
         },
       ),
