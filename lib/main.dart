@@ -45,6 +45,10 @@ class HomeScreen extends StatelessWidget {
       'body':
           'This is another message and is very very long so you can see and read the message.'
     },
+    {
+      'subject': 'You should see this message',
+      'body': 'This is another message from your friend.'
+    }
   ];
 
   HomeScreen({Key key, this.title}) : super(key: key);
