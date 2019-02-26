@@ -22,23 +22,28 @@ class HomeScreen extends StatelessWidget {
   final messages = const [
     {
       'subject': 'My first message',
-      'body': 'This is another message and is very very long so you can see and read the message. This is another message and is very very long so you can see this message.'
+      'body':
+          'This is another message and is very very long so you can see and read the message. This is another message and is very very long so you can see this message.'
     },
     {
       'subject': 'My second message',
-      'body': 'This is another message and is very very long so you can see and read the message.'
+      'body':
+          'This is another message and is very very long so you can see and read the message.'
     },
     {
       'subject': 'You won lottery',
-      'body': 'This is another message and is very very long so you can see and read the message.'
+      'body':
+          'This is another message and is very very long so you can see and read the message.'
     },
     {
       'subject': 'You should read this',
-      'body': 'This is another message and is very very long so you can see and read the message.'
+      'body':
+          'This is another message and is very very long so you can see and read the message.'
     },
     {
       'subject': 'You won lottery again',
-      'body': 'This is another message and is very very long so you can see and read the message.'
+      'body':
+          'This is another message and is very very long so you can see and read the message.'
     },
   ];
 
@@ -61,7 +66,11 @@ class HomeScreen extends StatelessWidget {
               child: Text('VK'),
             ),
             title: Text(message['subject']),
-            subtitle: Text(message['body']),
+            subtitle: Text(
+              message['body'],
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
           );
         },
       ),
