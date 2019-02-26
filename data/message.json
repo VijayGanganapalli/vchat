@@ -1,0 +1,30 @@
+[
+  {
+    "subject": "My first message",
+    "body": "This is another message and is very very long so you can see and read the message. This is another message and is very very long so you can see this message."
+  },
+  {
+    "subject": "My second message",
+    "body": "This is another message and is very very long so you can see and read the message."
+  },
+  {
+    "subject": "You won lottery",
+    "body": "This is another message and is very very long so you can see and read the message."
+  },
+  {
+    "subject": "You should read this",
+    "body": "This is another message and is very very long so you can see and read the message."
+  },
+  {
+    "subject": "You won lottery again",
+    "body": "This is another message and is very very long so you can see and read the message."
+  },
+  {
+    "subject": "You should see this message",
+    "body": "This is another message from your friend."
+  },
+  {
+    "subject": "Another message from JSON",
+    "body": "Please get JSON format to the my application."
+  }
+]
