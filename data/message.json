@@ -26,5 +26,9 @@
   {
     "subject": "Another message from JSON",
     "body": "Please get JSON format to the my application."
+  },
+  {
+    "subject": "Is automatic Json Serialization working?",
+    "body": "This is another message and is very very long so you can see and read the message."
   }
 ]
